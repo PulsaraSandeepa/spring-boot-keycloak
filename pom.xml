@@ -56,7 +56,7 @@
 			<dependency>
 				<groupId>org.keycloak.bom</groupId>
 				<artifactId>keycloak-adapter-bom</artifactId>
-				<version>15.0.2</version>
+				<version>16.1.0</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

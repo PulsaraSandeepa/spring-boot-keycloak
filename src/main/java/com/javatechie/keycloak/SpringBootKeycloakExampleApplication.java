@@ -24,7 +24,8 @@ public class SpringBootKeycloakExampleApplication {
 
     //this method can be accessed by user whose role is user
     @GetMapping("/{employeeId}")
-    @RolesAllowed("user")
+    //to enable @RoleAllowed you must configure @EnableGlobalMethodSecurity(jsr250Enabled = true) in security config
+    @RolesAllowed("user")//case sensitive
     public ResponseEntity<Employee> getEmployee(@PathVariable int employeeId) {
         return ResponseEntity.ok(service.getEmployee(employeeId));
     }

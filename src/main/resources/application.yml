@@ -7,7 +7,7 @@ spring:
       enabled: true
 
 keycloak:
-  realm: javatechie
+  realm: pulsara
   auth-server-url: http://localhost:8180/auth
   resource: springboot-keycloak
   public-client: true
